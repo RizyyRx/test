@@ -1,0 +1,4 @@
+#! /bin/bash
+rm -f /var/www/html/index.html
+service apache2 start
+tail -f /dev/null

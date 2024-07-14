@@ -1,0 +1,14 @@
+services:
+    web:
+        build: ./build
+        volumes:
+            - source-code:/var/www/html
+            - userdata:/root
+        ports:
+            - "80:80"
+        container_name: ctf-arena
+        hostname: arena-admin
+volumes: 
+    source-code:
+    userdata:
+
